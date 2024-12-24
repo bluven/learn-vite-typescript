@@ -1,8 +1,8 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter'
-import greet from '@shared/greet'
+import { setupCounter } from './counter.ts'
+import greet from '@shared/greet.ts'
 
 greet()
 

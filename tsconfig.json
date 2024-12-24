@@ -8,10 +8,10 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": false,
+    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": false,
+    "noEmit": true,
 
     /* Linting */
     "strict": true,
@@ -22,9 +22,9 @@
 
     "baseUrl": "./",
     "paths": {
-      "@": ["./src"],
-      "@shared": ["./shared/*"]
-    }
+      "@shared": ["./shared"],
+      "@shared/*": ["./shared/*"],
+    },
   },
-  "include": ["src"]
+  "include": ["src", "shared"]
 }
